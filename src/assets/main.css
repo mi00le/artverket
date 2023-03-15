@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "proxima_nova";
+    src: url("./proxima_nova.ttf");
+}
+
+* {
+    /* letter-spacing: 0.1em; */
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
