@@ -7,10 +7,14 @@
                 <a href="http://">KONTAKT</a>
             </div>
         </div>
-        <div class="copyright">
-            <p>MADE BY CARL-MICHAEL LINDFORS</p>
+        <div class="cont">
+            <div class="container">
+                <p>MADE BY CARL-MICHAEL LINDFORS</p>
+            </div>
 
-            <p>© COPYRIGHT {{ new Date().getFullYear() }} ARTVERKET</p>
+            <div class="copyright">
+                <p>© COPYRIGHT {{ new Date().getFullYear() }} ARTVERKET</p>
+            </div>
         </div>
     </div>
 </template>
@@ -47,11 +51,30 @@ a {
     color: #6e6e6e;
 }
 
+.cont {
+    display: flex;
+    flex-direction: row;
+}
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+}
 .copyright {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    right: 1em;
+}
+
+@media screen and (max-width: 740px) {
+    .copyright {
+        margin-top: 2em;
+        justify-content: center;
+        right: 0;
+    }
 }
 </style>
