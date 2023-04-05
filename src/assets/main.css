@@ -4,9 +4,12 @@
 }
 
 * {
-    /* letter-spacing: 0.1em; */
+    letter-spacing: 0.1em;
 }
 
+a:hover {
+    cursor: pointer;
+}
 html,
 body {
     margin: 0;

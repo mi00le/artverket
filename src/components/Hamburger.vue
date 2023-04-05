@@ -141,6 +141,7 @@ button {
     background-color: #fff;
     left: -250px;
     transition: all 0.3s ease-in-out;
+    z-index: 1;
 }
 .menu-container-items {
     padding-top: 5em;
